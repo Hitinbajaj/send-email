@@ -14,7 +14,7 @@ const App = () => {
     try {
       emailData.text+="\n Thanks for subscribing !!"
       console.log(emailData);
-      const response = await fetch('http://localhost:3000/email', {
+      const response = await fetch('https://emailsender-black.vercel.app/email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
