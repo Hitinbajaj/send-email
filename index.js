@@ -19,7 +19,7 @@ const port = 3000;
 app.use(bodyParser.json());
 app.use(cors());
 // Route to handle POST requests for sending emails
-app.post('/email', (req, res) => {
+app.post('/api/email', (req, res) => {
     const { to, subject, text } = req.body;
 
     if (!to || !subject || !text) {

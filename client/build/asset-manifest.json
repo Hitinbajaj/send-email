@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.4107173e.css",
-    "main.js": "/static/js/main.136da3e2.js",
+    "main.js": "/static/js/main.48822b51.js",
     "static/media/pexels-shivam-mitra-2519550.jpg": "/static/media/pexels-shivam-mitra-2519550.1a556f6c0015736af3ac.jpg",
     "index.html": "/index.html",
     "main.4107173e.css.map": "/static/css/main.4107173e.css.map",
-    "main.136da3e2.js.map": "/static/js/main.136da3e2.js.map"
+    "main.48822b51.js.map": "/static/js/main.48822b51.js.map"
   },
   "entrypoints": [
     "static/css/main.4107173e.css",
-    "static/js/main.136da3e2.js"
+    "static/js/main.48822b51.js"
   ]
 }
