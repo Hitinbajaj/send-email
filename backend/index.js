@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const { createTransport } = require('nodemailer');
 const cors = require('cors');
 require('dotenv').config(); // Load environment variables from .env file
-
+const path = require("path");
 const transporter = createTransport({
     host: "smtp-relay.brevo.com",
     port: 587,
@@ -43,7 +43,11 @@ app.post('/email', (req, res) => {
         }
     });
 });
-
+// production script
+app.use(express.static("../frontend/dist"));
+app.get("*", (req,res)=>{
+    res.sendFile(path.resolve(__dirname, '../', 'frontend', 'dist', 'index.html'))
+})
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
